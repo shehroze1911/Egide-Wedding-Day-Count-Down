@@ -1,0 +1,164 @@
+
+
+/* - Variables - */
+
+:root {
+	--primary-clr: #89D2D5;
+	--second-clr: #004E7B;
+	--second-clr-alt: #669E9F;
+	--gray-clr: #81C6C9;
+	--sun-clr: #F44A26;
+}
+
+
+/* - Base - */
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	background-color: var(--primary-clr);
+	color: var(--second-clr);
+}
+
+/* -- Main -- */
+.main {
+	margin-top: .15rem;
+}
+@media screen and (min-width: 768px){
+	.main {
+		margin-top: 2rem;
+	}
+}
+@media screen and (min-width: 1024px){
+	.main {
+		margin-top: 5rem;
+	}
+}
+.top-container {
+	margin-left: .8rem;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+@media screen and (min-width: 768px){
+	.top-container {
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+}
+.title {
+	font-size: 2.2rem;
+	max-width: 15rem;
+}
+.app-function-container {
+	margin: 1rem 0;
+}
+@media screen and (min-width: 1024px){
+	.title {
+		font-size: 3rem;
+		max-width: 19rem;
+	}
+	.app-function-container {
+		margin-right: 5rem;
+	}
+}
+.app-function-container span {
+	font-weight: 300;
+	font-size: 1.1rem;
+}
+.day-left-to-hide-desktop {
+	margin-left: .8rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin-top: 1.3rem;
+}
+@media screen and (min-width: 768px){
+	.day-left-to-hide-desktop {
+		display: none;
+	}
+}
+.day-left-to-hide-desktop .day {
+	font-size: 5rem;
+}
+.day-left-to-hide-desktop .day::after {
+	content: "Days left";
+	font-size: .9rem;
+	font-weight: 300;
+	padding-left: .3rem;
+	color: var(--second-clr);
+}
+
+.svg-img {
+	width: 350px;
+	height: auto;
+	transform: translateX(10px);
+}
+@media screen and (min-width: 1024px){
+	.svg-img {
+		width: 400px;
+	}
+}
+
+.counters-container {
+	margin-left: .8rem;
+	display: flex;
+	align-items: center;
+	margin-top: 1.2rem;
+}
+.counter-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-right: 2rem;
+}
+@media screen and (min-width: 768px){
+	.counters-container {
+		justify-content: center;
+		margin-top: 8rem;
+	}
+	.counter-container {
+		margin-right: 6rem;
+	}
+	.counter-container:last-child {
+		margin-right: 0;
+	}
+}
+.number {
+	font-size: 1.5rem;
+}
+@media screen and (min-width: 768px){
+	.number {
+		font-size: 1.9rem;
+	}
+}
+
+.number-name {
+	font-size: 1rem;
+	font-weight: 300;
+	margin-top: .5rem;
+	letter-spacing: .01rem;
+}
+@media screen and (min-width: 1024px){
+	.number {
+		font-size: 3rem;
+	}
+}
+.hide-on-phone {
+	display: none;
+}
+
+@media screen and (min-width: 768px){
+	.hide-on-phone {
+		display: flex;
+	}
+}
