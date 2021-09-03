@@ -58,9 +58,6 @@ body {
 	font-size: 2.2rem;
 	max-width: 15rem;
 }
-.app-function-container {
-	margin: 1rem 0;
-}
 @media screen and (min-width: 1024px){
 	.title {
 		font-size: 3rem;
