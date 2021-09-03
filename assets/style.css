@@ -29,7 +29,6 @@ body {
 
 /* -- Main -- */
 .main {
-	margin-top: .05rem;
 	margin-bottom: .05rem;
 }
 @media screen and (min-width: 768px){
